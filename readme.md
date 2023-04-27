@@ -26,6 +26,10 @@
 
 ## サーバ停止
 
+- `docker-compose down`
+
+## volume等削除含めサーバ停止
+
 - `docker-compose down -v --remove-orphans`
 
 
