@@ -6,7 +6,7 @@ services:
       - bundle:/usr/local/bundle
       - .:/src
     ports:
-      - 3001:3000
+      - 3010:3000
     tty: true
     #command: bundle exec rails s -p 3000 -b 0.0.0.0
 
@@ -29,6 +29,7 @@ services:
       - POSTGRES_PASSWORD=password
     profiles:
       - postgres
+
 volumes:
   bundle:
     driver: local

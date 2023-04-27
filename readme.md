@@ -11,12 +11,12 @@
 ##  railsのインストール
 
 - `docker-compose up -d` にてサーバ起動
-- `docker-compose exec app bundle init` にて `app/Gemfile` を作成
+- `docker-compose exec app bundle init` にて `Gemfile` を作成
 - `docker-compose exec app bundle add rails` railsをシステムへインストール
 - `docker-compose exec app rails new . -f`  railsを app へインストール
 - `docker-compose exec app bundle install` で rails newで足りなかったgemをインストール
 - `docker-compose exec app rails s -p 3000 -b 0.0.0.0` でサーバ起動
-- http://localhost:3000/ にてアクセス
+- http://localhost:3010/ にてアクセス
 - 動いたのを確認したら docker-compose.ymlのcommandをコメントイン
 
 ## インストール後のサーバ起動
@@ -70,6 +70,6 @@ rails s -b 0.0.0.0
 ```
 
 ```
-$ curl http://localhost:3000/hello
+$ curl http://localhost:3010/hello
 {"hello":"world"}
 ```
